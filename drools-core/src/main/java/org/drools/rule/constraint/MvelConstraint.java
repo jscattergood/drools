@@ -40,7 +40,7 @@ import static org.drools.core.util.StringUtils.skipBlanks;
 
 public class MvelConstraint extends MutableTypeConstraint implements IndexableConstraint {
     private static final boolean TEST_JITTING = false;
-    private static final int JIT_THRESOLD = 20; // Integer.MAX_VALUE;
+    private static final int JIT_THRESOLD = Integer.MAX_VALUE;
 
     private transient AtomicInteger invocationCounter = new AtomicInteger(1);
     private transient boolean jitted = false;
